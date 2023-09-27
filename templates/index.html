@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}Home - Photography{% endblock title %}
+
+{% block content %}
+
+<!-- Slider main container -->
+
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide slide-1">
+        <div>
+        <h2>Capturing Moments in Time</h2>
+        </div>
+        <div>
+        <p>Explore a world of visual storytelling through my lens.
+          Discover captivating photographs that freeze moments in time,
+          preserving memories and emotions in every frame.
+        </p>
+        </div>
+        <div>
+        <button>Learn more >></button>
+        </div>
+      </div>
+      <div class="swiper-slide slide-2">
+        <div>
+            <h2>Nature's Poetry Through the Lens</h2>
+            </div>
+            <div>
+            <p>Embark on a journey into the heart of nature's beauty.
+              Witness the exquisite poetry of landscapes, wildlife, 
+             and flora as I bring the natural world to life in vivid detail.
+            </p>
+            </div>
+            <div>
+            <button>Learn more >></button>
+            </div>
+      </div>
+      <div class="swiper-slide slide-3">
+        <div>
+            <h2>Portraits of Life's Rich Tapestry</h2>
+            </div>
+            <div>
+            <p>Delve into the diverse tapestry of human experiences and emotions. 
+              My portraits capture the essence of individuals, 
+              revealing their unique stories, personalities, and connections.
+            </p>
+            </div>
+            <div>
+            <button>Learn more >></button>
+            </div>
+      </div>
+  
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+
+
+
+ <!-- Latest landscape -->
+<section class="latest-landscape">
+  <h2 class="title">Our Latest Landscapes</h2>
+    <div class="landscape-container">
+
+      <div class="card">
+        <img src="{% static 'media/landscape 1.jpg' %}" alt="">
+        <p>Description here...</p>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'media/landscape 2.jpg' %}" alt="">
+        <p>Description here...</p>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'media/landscape 3.jpg' %}" alt="">
+        <p>Description here...</p>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'media/landscape 4.jpg' %}" alt="">
+        <p>Description here...</p>
+      </div>
+
+    </div>
+  
+</section>
+
+
+<!-- Latest Portraits -->
+
+<section class="latest-portraits">
+  <h2 class="title">Our Latest Portraits</h2>
+  <div class="portrait-container">
+
+    <div class="card-2">
+      <img src="{% static 'media/portrait 1.jpg' %}" alt="">
+      <p>Portrait description here...</p>
+    </div>
+    <div class="card-2">
+      <img src="{% static 'media/portrait 2.jpg' %}" alt="">
+      <p>Portrait description here...</p>
+    </div>
+    <div class="card-2">
+      <img src="{% static 'media/portrait 3.jpg' %}" alt="">
+      <p>Portrait description here...</p>
+    </div>
+    <div class="card-2">
+      <img src="{% static 'media/portrait 4.jpg' %}" alt="">
+      <p>Portrait description here...</p>
+    </div>
+    <div class="card-2">
+      <img src="{% static 'media/portrait 5.jpg' %}" alt="">
+      <p>Portrait description here...</p>
+    </div>
+    <div class="card-2">
+      <img src="{% static 'media/portrait 6.jpg' %}" alt="">
+      <p>Portrait description here...</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="call-2-action">
+  <h2 class="title">Get to Know Us</h2>
+  <div class="call-container">
+    <div class="call-card-1">
+      <img src="{% static 'media/call.jpeg' %}" alt="">
+    </div>
+    <div class="call-card-2">
+      <h2>Our Outstanding Services</h2>
+      
+      <p>
+        
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Eum molestias fugit asperiores quia magni dolorum illo molestiae 
+        optio laboriosam eveniet quos qui nesciunt, sint impedit dicta 
+        itaque recusandae quod iste voluptatibus? Officiis dolores
+         distinctio adipisci neque sint nihil tempora sapiente!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Eum molestias fugit asperiores quia magni dolorum illo molestiae 
+        optio laboriosam eveniet quos qui nesciunt, sint impedit dicta 
+        itaque recusandae quod iste voluptatibus? Officiis dolores
+         distinctio adipisci neque sint nihil tempora sapiente!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Eum molestias fugit asperiores quia magni dolorum illo molestiae 
+        optio laboriosam eveniet quos qui nesciunt, sint impedit dicta 
+        itaque recusandae quod iste voluptatibus? Officiis dolores
+         distinctio adipisci neque sint nihil tempora sapiente!
+        
+        </p>
+      <a href="{% url 'quote' %}"><button>Get a Quote</button></a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Testimonial Section -->
+
+
+
+
+{% endblock content %}

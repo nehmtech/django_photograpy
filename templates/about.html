@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Photography - Get a Quote{% endblock title %}
+{% block content %}
+<div style="padding-top: 100px;"></div>
+
+
+<!-- Call to Action -->
+<section class="call-2-action">
+    <h2 class="title">Get to Know Us</h2>
+    <div class="call-container">
+      <div class="call-card-1">
+        <img src="{% static 'media/call.jpeg' %}" alt="">
+      </div>
+      <div class="call-card-2">
+        <h2>Our Outstanding Services</h2>
+        
+        <p>
+          
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+          Eum molestias fugit asperiores quia magni dolorum illo molestiae 
+          optio laboriosam eveniet quos qui nesciunt, sint impedit dicta 
+          itaque recusandae quod iste voluptatibus? Officiis dolores
+           distinctio adipisci neque sint nihil tempora sapiente!
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+          Eum molestias fugit asperiores quia magni dolorum illo molestiae 
+          optio laboriosam eveniet quos qui nesciunt, sint impedit dicta 
+          itaque recusandae quod iste voluptatibus? Officiis dolores
+           distinctio adipisci neque sint nihil tempora sapiente!
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+          Eum molestias fugit asperiores quia magni dolorum illo molestiae 
+          optio laboriosam eveniet quos qui nesciunt, sint impedit dicta 
+          itaque recusandae quod iste voluptatibus? Officiis dolores
+           distinctio adipisci neque sint nihil tempora sapiente!
+          
+          </p>
+        <a href="{% url 'quote' %}"><button>Get a Quote</button></a>
+      </div>
+    </div>
+  </section>
+{% include "quoteform.html" %}
+
+{% endblock content %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Gallary - Photography{% endblock title %}
+
+
+{% block content %}
+<!-- Gallary section -->
+<section class="gallary">
+    <header>
+        <h2 class="title">Explore Our Gallaries</h2>
+        <div id="categories">
+            <span>Filter Gallary by:</span>
+            <button data-category="all">All</button>
+            <button data-category="landscape">Landscapes</button>
+            <button data-category="portrait">Portraits</button>
+            <button data-category="wedding">Weddings</button>
+            <button data-category="graduation">Graduations</button>
+        </div>
+    </header>
+    <main>
+        <div id="photo-gallay">
+
+        </div>
+    </main>
+</section>
+
+{% include "quoteform.html" %}
+
+
+
+{% endblock content %}

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Photography - Live Coverage{% endblock title %}
+
+{% block content %}
+<div style="padding-top: 100px;"></div>
+
+<!-- Live stream section -->
+<section class="live">
+    <h2 class="title">Get Our live Coverage</h2>
+    <div class="live-container">
+        <div class="live-card">
+            <img src="{% static 'media/youtube.png'%}" alt="">
+            <h3>Youtube Live Stream</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Velit mollitia minus magnam? Aliquam, possimus doloribus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Velit mollitia minus magnam? Aliquam, possimus doloribus!
+            </p>
+                <button>Follow us now!</button>
+            
+        </div>
+        <div class="live-card">
+            
+            <img src="{% static 'media/fb.png'%}" alt="">
+            <h3>Youtube Live Stream</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Velit mollitia minus magnam? Aliquam, possimus doloribus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Velit mollitia minus magnam? Aliquam, possimus doloribus!
+            </p>
+                <button>Follow us now!</button>
+
+        </div>
+        <div class="live-card">
+            <img src="{% static 'media/twitter.png'%}" alt="">
+            <h3>Youtube Live Stream</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Velit mollitia minus magnam? Aliquam, possimus doloribus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Velit mollitia minus magnam? Aliquam, possimus doloribus!
+            </p>
+                <button>Follow us now!</button>
+
+        </div>
+    </div>
+</section>
+
+{% include "quoteform.html" %}
+
+{% endblock content %}
